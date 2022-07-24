@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class QueueAtTheSchool {
     public static void main(String[] args) throws Exception {
         Scanner input = new Scanner(System.in);
+        //trazi se za zadatak 2 ulaza int
         int num = input.nextInt();
         int time = input.nextInt();
         input.nextLine();
