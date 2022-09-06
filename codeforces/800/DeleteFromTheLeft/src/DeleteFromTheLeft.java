@@ -28,7 +28,6 @@ public class DeleteFromTheLeft {
             }
         }
         System.out.println(first.length() - count + secc.length() - count);
-
         input.close();
     }
 }
