@@ -1,10 +1,7 @@
-import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class RoadToZero {
     public static void main(String[] args) throws Exception {
-        DecimalFormat df = new DecimalFormat();
-        df.setGroupingUsed(false);
         Scanner input = new Scanner(System.in);
         long testCases = input.nextInt();
         long i = 0;
@@ -19,8 +16,7 @@ public class RoadToZero {
 
             long moneySpent = 0;
             long tempMoneySpent = moneySpent;
-            //razliku samo spustim za b, ili dok manji nije 0
-            
+
             //kada se koristi povecavanje/smanjivanje oba broja odjednom
             if(x != y){
                 long diff;
@@ -40,10 +36,10 @@ public class RoadToZero {
             tempMoneySpent += a * tempX;
             tempMoneySpent += a * tempY;
             if(moneySpent < tempMoneySpent){
-                System.out.println(df.format(moneySpent));
+                System.out.println(moneySpent);
             }
             else{
-                System.out.println(df.format(tempMoneySpent));
+                System.out.println(tempMoneySpent);
             }
             i++;
         }
