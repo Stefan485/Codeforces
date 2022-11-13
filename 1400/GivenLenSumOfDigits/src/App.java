@@ -48,32 +48,27 @@ public class App {
             return;
         }
 
-        int temp = SumOfDIgits;
+        String larg = "";
         String smal = "";
         int counter = 0;
 
-        while(temp - 9 > 0){
+        while(SumOfDIgits - 9 > 0){
             smal += "9";
-            temp -= 9;
+            larg += 9;
+            SumOfDIgits -= 9;
             counter++;
         }
         if(lenOfNumber - counter == 1){
-            smal = temp + smal;
+            smal = SumOfDIgits + smal;
         } else {
             String t = "1";
-            smal = (temp - 1) + smal;
+            smal = (SumOfDIgits - 1) + smal;
             counter += 2;
             for(int i = 1; i <= (lenOfNumber - counter); i++){
                 t += 0;
             }
             smal = t + smal;
-        }
-        String larg = "";
-        counter = 0;
-        while(SumOfDIgits - 9 > 0){
-            larg += 9;
-            SumOfDIgits -= 9;
-            counter++;
+            counter -= 2;
         }
         larg += SumOfDIgits;
         counter++;
