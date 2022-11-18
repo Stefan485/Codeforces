@@ -3,9 +3,6 @@ import java.io.FileInputStream;
 import java.io.IOException;
 
 public class App {
-
-    //najduzi lanac sa nizom umesto ovoga, samo nadji najduzi lanac onih knjiga koje moze naci, indeksi su vec poredjani
-
     static class Reader {
         final private int BUFFER_SIZE = 1 << 16;
         private DataInputStream din;
