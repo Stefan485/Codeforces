@@ -30,6 +30,8 @@ public class App {
 
             System.out.println(res);
         }
+
+        in.close();
     }
 }
 
